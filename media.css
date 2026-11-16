@@ -1,0 +1,163 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .sidebar {
+    width: 98px;
+    padding: 15px 10px;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .nav-item a {
+    justify-content: center;
+    padding: 15px 10px;
+  }
+
+  .nav-item span {
+    display: none;
+  }
+
+  .quick-actions h3 {
+    display: none;
+  }
+
+  .action-item {
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .action-item span {
+    display: none;
+  }
+
+  .action-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo-icon {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    .finance-dashboard{display: flex;flex-direction: column;margin: auto;}
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+.dashboard-bottom{display: flex;flex-direction: column;margin: auto;}.transactions-card {
+    max-height: 750px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.transactions-card::-webkit-scrollbar {
+    width: 6px;
+}
+
+.transactions-card::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+.transactions-card::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+
+
+    .top-header {
+      display: grid;
+      grid-template-columns: 1fr 50px 50px;
+      grid-template-areas:
+        "logo logo logo"
+        "profile notification search"
+        "status status status";
+
+      gap: 15px;
+      width: 95%;
+      margin: 20px auto;
+      padding: 16px;
+      border-radius: 18px;
+    }
+
+    .header-right,
+    .header-left {
+      display: contents;
+    }
+
+    .header-logo {
+      grid-area: logo;
+      justify-self: start;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 14px;
+      font-size: 19px;
+    }
+
+    .logo-text h1 {
+      font-size: 25px;
+    }
+
+    .logo-text p {
+      font-size: 12px;
+      margin-top: 3px;
+    }
+
+    .profile-card {
+      grid-area: profile;
+      justify-self: start;
+      padding: 5px;
+      border-radius: 12px;
+    }
+
+    .profile-card img {
+      width: 38px;
+      height: 38px;
+    }
+
+    .profile-info {
+      display: none;
+    }
+
+    .notification-btn {
+      grid-area: notification;
+    }
+
+    .header-btn {
+      width: 40px;
+      height: 40px;
+      font-size: 17px;
+    }
+
+    .online-status {
+      grid-area: status;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: center;
+      padding: 10px;
+      font-size: 13px;
+    }
+  }
+}
